@@ -145,6 +145,69 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/01/06/%E8%AE%BE%E8%AE%A1%E6%96%87%E6%A1%A3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/01/06/%E8%AE%BE%E8%AE%A1%E6%96%87%E6%A1%A3/" class="post-title-link" itemprop="url">设计文档</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2024-01-06 20:58:53 / Modified: 21:04:31" itemprop="dateCreated datePublished" datetime="2024-01-06T20:58:53+08:00">2024-01-06</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>自习室管理系统是为了方便管理自习室的预约、入场、使用情况统计等功能而设计的系统。本文档旨在对自习室管理系统的设计进行详细的分析和描述。</p>
+<h2 id="实体关系"><a href="#实体关系" class="headerlink" title="实体关系"></a>实体关系</h2><p>由三个实体 教室，学员队，数据，他们的主建都是其ID，属性是其名字，数据的属性还包含第几周，第几天，第几节课。一个学员队可以在多个教室上课，一个教室可以给多个学员队使用所以他们是多对多的关系；但是一个数据ID只能由一个学员队和一个教室组成，一个学员队和一个教室可以组成多个数据ID所以他们是多对一的关系。<br>数据包含的操作有增加，删除，修改。数据是由学员队和教室组成的，没有这两个则数据无法存在，故其关系为强的聚合关系。</p>
+<h2 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h2><p>管理员可以添加、删除、修改自习室管理系统的用户信息。<br>系统需要保障用户信息和预约信息的安全性，防止信息泄露和恶意攻击。<br>系统需要定期进行数据备份，以防止数据丢失和损坏。</p>
+<h2 id="ER图"><a href="#ER图" class="headerlink" title="ER图"></a>ER图</h2><p><img src="/2024/01/06/%E8%AE%BE%E8%AE%A1%E6%96%87%E6%A1%A3/%E5%AE%9E%E4%BD%93%E5%85%B3%E7%B3%BB.png"></p>
+<h2 id="类图"><a href="#类图" class="headerlink" title="类图"></a>类图</h2><p><img src="/2024/01/06/%E8%AE%BE%E8%AE%A1%E6%96%87%E6%A1%A3/%E7%B1%BB%E5%9B%BE.png"></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="http://example.com/2024/01/06/%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E6%96%87%E6%A1%A3/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -293,7 +356,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
